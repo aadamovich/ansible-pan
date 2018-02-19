@@ -172,7 +172,7 @@ def delete_address_from_mapping(device, ip_address, tags):
 def main():
     argument_spec = dict(
         ip_address=dict(required=True),
-        password=dict(required=True, no_log=True),
+        password=dict(no_log=True),
         username=dict(default='admin'),
         api_key=dict(no_log=True),
         devicegroup=dict(default=None),
